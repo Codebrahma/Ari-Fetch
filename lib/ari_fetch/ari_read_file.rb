@@ -9,7 +9,7 @@ module AriFetch
     attr_accessor :content, :vehicles
 
     def fetch_data(ftp_instance, include_cancel)
-      ftp_instance.gettextfile(name)
+      ftp_instance.get(name)
       @content = parse!(File.open(name, "r"))
       FileUtils.rm name
       filter_cancel_vehicles! unless include_cancel
