@@ -1,6 +1,6 @@
 # AriFetch
 
-TODO: Write a gem description
+A RoR gem to integrate with ARI, a used cars reseller in the US.
 
 ## Installation
 
